@@ -127,7 +127,7 @@ public class UnitTest {
     	list.get(0);
     }
     
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void obtainNegativeIndex() {
     	List<Integer> list = new ArrayList<>();
     	list.add(1);
@@ -178,7 +178,7 @@ public class UnitTest {
     	list.remove(0);
     }
     
-    @Test(expected = ArrayIndexOutOfBoundsException.class)
+    @Test(expected = IndexOutOfBoundsException.class)
     public void removingNegativeIndex() {
     	List<Integer> list = new ArrayList<>();
     	list.add(100);
